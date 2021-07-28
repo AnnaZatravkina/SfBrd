@@ -1,0 +1,49 @@
+.fullscreen-menu {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        background: #313131;
+        z-index: 1000;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fullscreen-menu__close {
+    @include tablets {
+        position: absolute;
+        width: rem(20px);
+        height: rem(20px);
+        cursor: pointer;
+        left: rem(706px);
+        right: rem(42px);
+        top: rem(42px);
+        bottom: rem(911px);
+        color: $white;
+    }
+}
+
+.fullscreen-menu__list {
+    display: block;
+    flex-direction: column;
+    color: $white;
+    text-align: center;
+}
+
+.fullscreen-menu__item {
+    font-size: rem(36px);
+    line-height: rem(72px);
+}
+
+.fullscreen-menu__link {
+    text-decoration: none;
+    white-space: nowrap;
+}

@@ -1,0 +1,19 @@
+.product-slider__arrow--direction--prev {
+    background: url("../img/prevarrow.png") center center no-repeat;
+    padding: rem(280px) rem(30px);
+    position: absolute;
+
+    @include tablets {
+        padding: rem(390px) rem(120px);
+    }
+}
+
+.product-slider__arrow--direction--next {
+    background: url("../img/nextarrow.png") center center no-repeat;
+    padding: rem(280px) rem(950px);
+    position: absolute;
+
+    @include tablets {
+        padding: rem(390px) rem(700px);
+    }
+}
