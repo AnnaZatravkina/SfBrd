@@ -1,19 +1,35 @@
-.product-slider__arrow--direction--prev {
-    background: url("../img/prevarrow.png") center center no-repeat;
-    padding: rem(280px) rem(30px);
+.products-slider__arrow {
     position: absolute;
+}
+
+.products-slider__arrow-elem {
+    width: rem(14px);
+    height: rem(27px);
+
+}
+
+.products-slider__arrow-elem--prev {
+    margin: rem(280px) rem(30px);
 
     @include tablets {
-        padding: rem(390px) rem(120px);
+        margin: rem(280px) rem(115px);
+    }
+
+    @include phones {
+        margin: rem(280px) rem(15px);
     }
 }
 
+.products-slider__arrow-elem--next {
+    padding: rem(0px) rem(300px);
+}
+
+/*
 .product-slider__arrow--direction--next {
-    background: url("../img/nextarrow.png") center center no-repeat;
     padding: rem(280px) rem(950px);
-    position: absolute;
 
     @include tablets {
         padding: rem(390px) rem(700px);
     }
 }
+*/

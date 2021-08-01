@@ -1,5 +1,6 @@
 .product__image {
-    background: url("../img/greyspot.png") center center no-repeat;
+    padding-left: rem(70px);
+    padding-right: rem(50px);
 
     @include tablets {
         display: flex;
@@ -13,12 +14,12 @@
     justify-content: space-between;
     flex-direction: column;
     flex: 1;
-    padding-left: rem(58px);
-    padding-right: rem(70px);
+    padding-right: rem(40px);
 
     @include tablets {
         text-align: center;
         align-items: center;
+        padding-right: rem(0px);
     }
 }
 
@@ -36,7 +37,7 @@
 
     &:hover .parameters__drop {
         opacity: 0.8;
-        display: block;
+        display: flex;
     }
 
     @include tablets {
@@ -77,11 +78,11 @@
     margin-bottom: rem(24px);
 
     @include tablets {
-        padding: rem(0px) rem(75px);
+        padding: rem(0px) rem(130px);
     }
 
     @include phones {
-        padding: rem(0px) rem(20px);
+        padding: rem(0px) rem(70px);
         margin-bottom: rem(22px);
     }
 }

@@ -59,4 +59,10 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="width">
     <path d="M3.409 10.48L.513 7.583l.002 9.912h9.91L7.53 14.602l7.062-7.06 2.895 2.895V.524H7.573l2.895 2.895-7.06 7.06z" fill="#010002"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 29" id="nextarrow">
+    <path d="M1 1l12.086 12.086a2 2 0 010 2.828L1 28" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 29" id="prevarrow">
+    <path d="M14 28L1.914 15.914a2 2 0 010-2.828L14 1" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
+  </symbol>
 </svg>

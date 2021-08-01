@@ -5,10 +5,10 @@
     padding: rem(30px) rem(25px);
     min-width: rem(273px);
     position: absolute;
-    left: rem(91px);
+    left: 100%;
+    top: 0%;
     transition: opacity .3s;
-    margin-top: rem(200px);
-    display: flex;
+    display: none;
     
     &:after {
         content: "";

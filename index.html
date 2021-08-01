@@ -154,11 +154,15 @@
             <section class="section products-section">
                 <div class="container">
                     <div class="products-slider">
-                        <a href="#" class="products-slider__arrow products-slider__arrow--direction--prev"></a>
+                        <a href="#" class="products-slider__arrow">
+                            <svg class="products-slider__arrow-elem products-slider__arrow-elem--prev">
+                                <use xlink:href="./sprite.svg#prevarrow"></use>
+                            </svg> 
+                        </a>
                         <ul class="products">
                             <li class="products__item">
                                 <div class="product__image">
-                                    <img src="./img/board.png" alt="board" class="product__image-img">
+                                    <img src="./img/all.png" alt="boardspot" class="product__image-img">
                                 </div>
                                 <div class="product__container">
                                     <a href="#" class="product__parameters">
@@ -246,7 +250,11 @@
                                 </div>
                             </li>
                         </ul>
-                        <a href="#" class="products-slider__arrow products-slider__arrow--direction--next"></a>
+                        <a href="#" class="products-slider__arrow ">
+                            <svg class="products-slider__arrow-elem products-slider__arrow-elem--next">
+                                <use xlink:href="./sprite.svg#nextarrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -415,22 +423,24 @@
             </section>
         </div>
     </div>
-    <a href="" class="hamburger">
+    <a href="" class="hamburger" id="open">
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
     </a>
-    <div class="fullscreen-menu">
-        <div class="fullscreen-menu__close">X</div>
-        <ul class="fullscreen-menu__list">
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">О нас</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Серфборды</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Команда</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Меню</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Отзывы</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Как мы работаем</a> </li>
-            <li class="fullscreen-menu__item"> <a href="#" class="fullscreen-menu__link">Контакты</a> </li>
-        </ul>
+    <div class="open">
+        <div class="fullscreenmenu">
+            <div class="fullscreenmenu__close">X</div>
+            <ul class="fullscreenmenu__list">
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">О нас</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Серфборды</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Команда</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Меню</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Отзывы</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Как мы работаем</a> </li>
+                <li class="fullscreenmenu__item"> <a href="#" class="fullscreenmenu__link">Контакты</a> </li>
+            </ul>
+        </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
@@ -443,6 +453,7 @@
             <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
         </ul>
     </nav>
+    <script src="./openmenu.js"></script>
     <script src="./string-filtering.js"></script>
     <script src="./object-selection.js"></script>
     <script src="./string-analysing.js"></script>
