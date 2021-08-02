@@ -1,22 +1,23 @@
-.fullscreenmenu {
+.fullscreen-menu {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: #313131;
+    z-index: 1000;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 
-    @include tablets {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        flex-direction: column;
-        background: #313131;
-        z-index: 1000;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
+    &.open {
+        display: flex;
     }
 }
 
-.fullscreenmenu__close {
+.fullscreen-menu__close {
     width: rem(20px);
     height: rem(20px);
     cursor: pointer;
@@ -36,19 +37,19 @@
     }
 }
 
-.fullscreenmenu__list {
+.fullscreen-menu__list {
     display: block;
     flex-direction: column;
     color: $white;
     text-align: center;
 }
 
-.fullscreenmenu__item {
+.fullscreen-menu__item {
     font-size: rem(36px);
     line-height: rem(72px);
 }
 
-.fullscreenmenu__link {
+.fullscreen-menu__link {
     text-decoration: none;
     white-space: nowrap;
 }

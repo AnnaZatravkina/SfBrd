@@ -1,0 +1,41 @@
+.products-slider {
+    position: relative;
+}
+
+.products-slider__arrow {
+    position: absolute;
+    top: 50%;
+    
+    @include tablets {
+        transform: translate(350%, -350%);
+    }
+}
+
+.products-slider__arrow--prev {
+    
+    @include tablets {
+        left: rem(40px);
+    }
+
+    @include phones {
+        left: rem(-25px);
+    }
+}
+
+.products-slider__arrow-elem {
+    width: rem(14px);
+    height: rem(27px);
+}
+
+.products-slider__arrow--next {
+    
+    @include tablets {
+        right: rem(155px);
+    }
+
+    @include phones {
+        right: rem(75px);
+    }
+}
+
+

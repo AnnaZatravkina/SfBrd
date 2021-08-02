@@ -1,9 +1,21 @@
-const openMenu = document.querySelector("#fullscreenmenu");
-const body = document.body;
+const openMenu = document.querySelector(".fullscreen-menu");
+const hamburger = document.querySelector(".hamburger");
+const closeMenu = document.querySelector(".fullscreen-menu__close");
+const items = document.querySelector(".fullscreen-menu__item");
 
-openMenu.addEventListener("click", e => {
-    const fullscreenmenuElement = document.createElement("div");
-    fullscreenmenuElement.classList.add("fullscreenmenu");
+hamburger.addEventListener("click", (e) => {
+    e.preventDefault();
+    openMenu.classList.add("open");
+});
 
-    body.appendChild(fullscreenmenuElement);
-})
+closeMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    openMenu.classList.remove("open");
+});
+
+for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        openMenu.classList.remove("open");
+    });
+};
