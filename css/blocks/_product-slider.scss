@@ -1,35 +1,43 @@
 .products-slider__arrow {
-    position: absolute;
+    position: relative;
 }
 
 .products-slider__arrow-elem {
     width: rem(14px);
     height: rem(27px);
-
 }
 
 .products-slider__arrow-elem--prev {
-    margin: rem(280px) rem(30px);
+    position: absolute;
+    top: rem(245px);
+    left: rem(-10px);
+    transform: translate(-50%, 50%);
 
     @include tablets {
-        margin: rem(280px) rem(115px);
+        top: rem(298px);
+        left: rem(125px);
     }
 
     @include phones {
-        margin: rem(280px) rem(15px);
+        top: rem(288px);
+        left: rem(20px);
     }
 }
 
 .products-slider__arrow-elem--next {
-    padding: rem(0px) rem(300px);
-}
-
-/*
-.product-slider__arrow--direction--next {
-    padding: rem(280px) rem(950px);
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: rem(-293px);
+    right: rem(-980px);
 
     @include tablets {
-        padding: rem(390px) rem(700px);
+        top: rem(-610px);
+        right: rem(-690px);
     }
+
+    @include phones {
+        top: rem(-610px);
+        right: rem(-530px);
+    }    
 }
-*/
+

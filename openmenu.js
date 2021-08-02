@@ -1,9 +1,9 @@
-const openMenu = document.querySelector("#open");
+const openMenu = document.querySelector("#fullscreenmenu");
 const body = document.body;
 
 openMenu.addEventListener("click", e => {
-    const openElement = document.createElement("div");
-    openElement.classList.add("open");
+    const fullscreenmenuElement = document.createElement("div");
+    fullscreenmenuElement.classList.add("fullscreenmenu");
 
-    body.appendChild(openElement);
+    body.appendChild(fullscreenmenuElement);
 })
