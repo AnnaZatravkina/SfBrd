@@ -1,7 +1,7 @@
 const openMenu = document.querySelector(".fullscreen-menu");
 const hamburger = document.querySelector(".hamburger");
 const closeMenu = document.querySelector(".fullscreen-menu__close");
-const items = document.querySelector(".fullscreen-menu__item");
+const items = document.querySelectorAll(".fullscreen-menu__item");
 
 hamburger.addEventListener("click", (e) => {
     e.preventDefault();
