@@ -1,5 +1,11 @@
 .products-slider {
     position: relative;
+
+    .bx-wrapper {
+        border: 0 !important;
+        background: transparent;
+        box-shadow: none;
+    }
 }
 
 .products-slider__arrow {
@@ -14,17 +20,21 @@
     background-size: contain;
     
     @include tablets {
-        transform: translate(350%, -350%);
+        top: 40%;
+    }
+
+    @include phones {
+        top: 35%;
     }
 
     &--prev {
         left: 0;
         @include tablets {
-            left: rem(40px);
+            left: rem(100px);
         }
 
         @include phones {
-            left: rem(-25px);
+            left: rem(10px);
         }
     }
 
@@ -33,11 +43,11 @@
         transform: rotate(-180deg);
             
         @include tablets {
-            right: rem(155px);
+            right: rem(120px);
         }
 
         @include phones {
-            right: rem(75px);
+            right: rem(10px);
         }
     }
 }

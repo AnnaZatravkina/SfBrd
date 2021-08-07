@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -160,6 +161,95 @@
                             <a href="#" class="products-slider__arrow products-slider__arrow--next"></a>
                         </div>
                         <ul class="products">
+                            <li class="products__item">
+                                <div class="product__image">
+                                    <img src="./img/all.png" alt="boardspot" class="product__image-img">
+                                </div>
+                                <div class="product__container">
+                                    <a href="#" class="product__parameters">
+                                        <img src="./img/arrows.png" alt="arrows" class="product__parameters-img">
+                                        <p class="product__parameters--text">параметры</p>
+                                        <div class="parameters__drop">
+                                            <div class="parameters__drop-left">
+                                                <ul class="parameters__drop-list">
+                                                    <li class="parameters__drop-item">
+                                                        <div class="parameters__drop-icon">
+                                                            <svg class="parameters__drop-elem">
+                                                                <use xlink:href="./sprite.svg#length"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="parameters__drop-text">Длина доски</p>
+                                                    </li>
+                                                    <li class="parameters__drop-item">
+                                                        <div class="parameters__drop-icon">
+                                                            <svg class="parameters__drop-elem">
+                                                                <use xlink:href="./sprite.svg#width"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="parameters__drop-text">Ширина доски</p>
+                                                    </li>
+                                                    <li class="parameters__drop-item">
+                                                        <div class="parameters__drop-icon">
+                                                            <svg class="parameters__drop-elem">
+                                                                <use xlink:href="./sprite.svg#thickness"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="parameters__drop-text">Толщина</p>
+                                                    </li>
+                                                    <li class="parameters__drop-item">
+                                                        <div class="parameters__drop-icon">
+                                                            <svg class="parameters__drop-elem">
+                                                                <use xlink:href="./sprite.svg#time"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="parameters__drop-text">Срок службы</p>
+                                                    </li>
+                                                    <li class="parameters__drop-item">
+                                                        <div class="parameters__drop-icon">
+                                                            <svg class="parameters__drop-elem">
+                                                                <use xlink:href="./sprite.svg#weight"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="parameters__drop-text">Вес</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="parameters__drop-right">
+                                                <ul class="parameters__drop-right--list">
+                                                    <li class="parameters__drop-right--item">от 2,5 м</li>
+                                                    <li class="parameters__drop-right--item">от 40 см</li>
+                                                    <li class="parameters__drop-right--item">8 см</li>
+                                                    <li class="parameters__drop-right--item">5 лет</li>
+                                                    <li class="parameters__drop-right--item">7-8 кг</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h2 class="product__title">Лонгборд 2.0</h2>
+                                    <div class="product__text">
+                                        <p>
+                                            Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
+                                            разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий
+                                            ехать по ним.
+                                        </p>
+                                    </div>
+                                    <ul class="product__content">
+                                        <li class="product__content-item">
+                                            <div class="product__content-text">Длина доски</div>
+                                            <p class="product__content-elem">от 2,5 метров</p>
+                                        </li>
+                                        <li class="product__content-item">
+                                            <div class="product__content-text">Ширина доски</div>
+                                            <p class="product__content-elem">от 40 сантиметров</p>
+                                        </li>
+                                    </ul>
+                                    <div class="product__price">
+                                        <div class="product__price-text">7000 ₽</div>
+                                        <a href="#" class="btn btn--color--yellow">Заказать</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="products__item">
                                 <div class="product__image">
                                     <img src="./img/all.png" alt="boardspot" class="product__image-img">
@@ -607,10 +697,12 @@
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./openmenu.js"></script>
     <script src="./tabs.js"></script>
     <script src="./modal.js"></script>
     <script src="./acco.js"></script>
+    <script src="./slider.js"></script>
     <script src="./string-filtering.js"></script>
     <script src="./object-selection.js"></script>
     <script src="./string-analysing.js"></script>

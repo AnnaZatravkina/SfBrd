@@ -36,6 +36,11 @@
     left: 28%;
     height: rem(176px);
     width: rem(309px);
+
+    @include phones {
+        right: 23%;
+        left: 23%;
+    }
 }
 
 .input-error {
