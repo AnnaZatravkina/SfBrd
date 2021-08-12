@@ -1825,7 +1825,7 @@ button {
   right: 0px;
   bottom: 0px;
   cursor: pointer;
-  background: url(../../img/playbig.png) center center no-repeat, url(../../img/splash.png) center center/cover no-repeat;
+  background: url(../img/playbig.png) center center no-repeat, url(../img/splash.png) center center/cover no-repeat;
 }
 
 .player__controls {
@@ -1907,7 +1907,7 @@ button {
 
 .products-menu-section {
   position: relative;
-  background: url(../../img/prodmenu.jpg) center center/cover no-repeat;
+  background: url(../img/prodmenu.jpg) center center/cover no-repeat;
   max-width: 52.2222222222rem;
   margin-left: auto;
   margin-right: auto;
