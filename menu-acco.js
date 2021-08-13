@@ -1,4 +1,25 @@
-const mesureWidth = (item) => {
+const mesureWidth = () => {
+    return 500;
+}
+
+const openItem = item => {
+    const hiddenContent = item.find(".products-menu__content");
+    const reqWidth = mesureWidth();
+
+    hiddenContent.width(reqWidth);
+}
+
+$(".products-menu__title").on("click", e => {
+    e.preventDefault();
+
+    const $this = $(e.currentTarget);
+    const item = $this.closest(".products-menu__item");
+
+    openItem(item);
+});
+
+
+/*const mesureWidth = (item) => {
     let reqItemWidth = 0;
 
     const screenWidth = $(window).width();
@@ -62,4 +83,5 @@ $(".products-menu__close").on("click", e => {
     e.preventDefault();
 
     closeEveryItemContainer($('.products__menu'));
-})
+})*/
+
