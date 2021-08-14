@@ -49,13 +49,11 @@
         .products-menu__close {
             display: block;
         }
-    }
-}
 
-.products-menu__item.active {
-    @include tablets {
-        .fixed-menu {
-            display: none;
+        .hamburger.fullscreen-menu {
+            @include tablets {
+                display: none;
+            }
         }
     }
 }
@@ -93,11 +91,19 @@
 
 .products-menu__close {
     display: none;
-    position: absolute;
-    top: rem(20px);
-    right: rem(25px);
     border: none;
     background: transparent;
+    position: fixed;
+    padding-top: rem(20px);
+    padding-left: rem(470px);
+
+    @include tablets {
+        padding-left: rem(320px);
+    }
+
+    @include phones {
+        padding-left: rem(245px);
+    }
 }
 
 .products-menu__close-icon {

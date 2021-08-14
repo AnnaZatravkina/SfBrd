@@ -65,4 +65,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 29" id="prevarrow">
     <path d="M14 28L1.914 15.914a2 2 0 010-2.828L14 1" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 67" id="playbig">
+    <path d="M43.244 37.39L8.63 64.967c-3.31 2.625-8.178.266-8.178-3.956V5.857C.452 1.634 5.32-.724 8.63 1.9l34.614 27.577c2.51 2.016 2.51 5.896 0 7.912z" fill="#fff"></path>
+  </symbol>
 </svg>
