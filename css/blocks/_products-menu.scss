@@ -1,7 +1,7 @@
 .products-menu-section {
     background: url(../img/prodmenu.jpg) center center/cover no-repeat;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: row;
     
     @include tablets {
@@ -11,18 +11,19 @@
 
 .products-menu-section__title {
     margin-top: rem(109px);
-    margin-right: rem(846px);
-    font-family: Play;
+    margin-left: rem(84px);
+    font-size: rem(48px);
+    line-height: rem(58px);
     color: $white;
 
     @include tablets {
         margin-top: rem(85px);
-        margin-right: rem(262px);
+        margin-left: rem(40px);
     }
 
     @include phones {
         margin-top: rem(76px);
-        margin-right: rem(85px);
+        margin-left: rem(10px);
     }
 }
 

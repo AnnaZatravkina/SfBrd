@@ -7,10 +7,36 @@
     @include tablets {
         display: none;
     }
-}
 
-.fixed-menu--shadowed {
-    color: $yellow;
+    &--shadowed {
+        .fixed-menu__link {
+            &:before {
+                background: $black;
+            }
+            &:hover {
+                border: rem(1px) solid #000;
+                &:after {
+                    background: #000;
+                }
+            } 
+        }    
+        .fixed-menu__item {
+            display: block;
+            .fixed-menu__link {
+                &:before {
+                    background: #000;
+                }
+            }
+            &--active {
+                .fixed-menu__link {
+                    border: rem(1px) solid #000;
+                    &:before {
+                        background: #000;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .fixed-menu__item {

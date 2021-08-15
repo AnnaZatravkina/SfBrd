@@ -117,30 +117,20 @@
 
 .product__price {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-right: rem(20px);
-
-    @include tablets {
-        padding-right: rem(0px);
-    }
-    
-    @include phones {
-        padding-right: rem(0px);
-    }
 }
 
 .product__price-text {
     font-size: rem(60px);
     font-weight: 300;
     color: #151515;
-    flex: 1;
+    padding-right: rem(25px);
 
     @include tablets {
-        padding-right: rem(42px);
+        padding-right: rem(35px);
     }
 
     @include phones {
-        padding-right: rem(30px);
+        padding-right: rem(20px);
     }
 }

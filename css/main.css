@@ -87,7 +87,7 @@ img {
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   min-height: 36.2222222222rem;
   color: #fff;
   font-weight: 700;
@@ -362,7 +362,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1250,41 +1250,25 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 1.1111111111rem;
-}
-@media screen and (max-width: 768px) {
-  .product__price {
-    padding-right: 0rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .product__price {
-    padding-right: 0rem;
-  }
 }
 
 .product__price-text {
   font-size: 3.3333333333rem;
   font-weight: 300;
   color: #151515;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  padding-right: 1.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .product__price-text {
-    padding-right: 2.3333333333rem;
+    padding-right: 1.9444444444rem;
   }
 }
 @media screen and (max-width: 480px) {
   .product__price-text {
-    padding-right: 1.6666666667rem;
+    padding-right: 1.1111111111rem;
   }
 }
 
@@ -1478,9 +1462,26 @@ img {
     display: none;
   }
 }
-
-.fixed-menu--shadowed {
-  color: #FEDB3F;
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background: #292929;
+}
+.fixed-menu--shadowed .fixed-menu__link:hover {
+  border: 0.0555555556rem solid #000;
+}
+.fixed-menu--shadowed .fixed-menu__link:hover:after {
+  background: #000;
+}
+.fixed-menu--shadowed .fixed-menu__item {
+  display: block;
+}
+.fixed-menu--shadowed .fixed-menu__item .fixed-menu__link:before {
+  background: #000;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border: 0.0555555556rem solid #000;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link:before {
+  background: #000;
 }
 
 .fixed-menu__item {
@@ -1943,9 +1944,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1959,20 +1960,21 @@ button {
 
 .products-menu-section__title {
   margin-top: 6.0555555556rem;
-  margin-right: 47rem;
-  font-family: Play;
+  margin-left: 4.6666666667rem;
+  font-size: 2.6666666667rem;
+  line-height: 3.2222222222rem;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
   .products-menu-section__title {
     margin-top: 4.7222222222rem;
-    margin-right: 14.5555555556rem;
+    margin-left: 2.2222222222rem;
   }
 }
 @media screen and (max-width: 480px) {
   .products-menu-section__title {
     margin-top: 4.2222222222rem;
-    margin-right: 4.7222222222rem;
+    margin-left: 0.5555555556rem;
   }
 }
 

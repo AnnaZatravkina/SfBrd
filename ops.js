@@ -3,6 +3,9 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 sections.first().addClass("active");
@@ -21,12 +24,12 @@ const countSectionPosition = sectionEq => {
 const changeMenuThemeForSection = (sectionEq) => {
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr("data-sidemenu-theme");
-    const activeClass = "fixed-menu--shadowed";
+    //const activeClass = 'fixed-menu--shadowed';
 
-    if (menuTheme === "yellow") {
-        sideMenu.addClass(activeClass);
+    if (menuTheme === 'black') {
+        sideMenu.addClass("fixed-menu--shadowed");
     } else {
-        sideMenu.removeClass(activeClass);
+        sideMenu.removeClass("fixed-menu--shadowed");
     }
 };
 
@@ -107,12 +110,29 @@ $(window).on("keydown", (e) => {
     }
 });
 
-$("[data-scroll-to]").click((e) => {
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
+$('[data-scroll-to]').on("click", (e) => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
-    const target = $this.attr("data-scroll-to");
+    const target = $this.attr('data-scroll-to');
     const reqSection = $(`[data-section-id=${target}]`);
 
     performTransition(reqSection.index());
 });
+
+if (isMobile) {
+    $("body").swipe({
+    swipe: function (event, direction) {
+        const scroller = viewportScroller();
+        let scrollDirection = "";
+
+        if (direction == "up") scrollDirection = "next";
+        if (direction == "down") scrollDirection = "prev";
+
+        scroller[scrollDirection]();
+    },
+});
+}
+
